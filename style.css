@@ -1,5 +1,23 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./font/flaticon.ttf?243399f29508ceab42516e216fe25ad3") format("truetype"),
+        url("./font/flaticon.woff?243399f29508ceab42516e216fe25ad3") format("woff"),
+        url("./font/flaticon.woff2?243399f29508ceab42516e216fe25ad3") format("woff2"),
+        url("./font/flaticon.eot?243399f29508ceab42516e216fe25ad3#iefix") format("embedded-opentype"),
+        url("./font/flaticon.svg?243399f29508ceab42516e216fe25ad3#flaticon") format("svg");
+}
+html {
+    font-size: 16px;
+}
+
+/* Обнуление и начальные стили*/
 body {
     margin: 0;
+    min-height: 600px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: #3D3D3D;
 }
 
 *,
@@ -8,3 +26,103 @@ body {
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Стили иконочного шрифта */
+div[class^="icon_"]:before, div[class*="icon_"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.benefits__item-icon_1:before {
+    content: "\f101";
+}
+.benefits__item-icon_2:before {
+    content: "\f102";
+}
+.benefits__item-icon_3:before {
+    content: "\f103";
+}
+.benefits__item-icon_4:before {
+    content: "\f104";
+}
+.benefits__item-icon_5:before {
+    content: "\f105";
+}
+.benefits__item-icon_6:before {
+    content: "\f106";
+}
+
+/* Основные стили */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.benefits {
+    margin: 2rem 0;
+
+    background-color: #FFFAEF;
+
+    overflow: hidden;
+}
+
+.benefits__title {
+    margin: 1em 0;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.benefits__items {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.benefits__item {
+    display: flex;
+
+    padding: 1.5em 1em;
+
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 400px;
+}
+
+.benefits__item-icon {
+    font-size: 75px;
+    color: #F3BD00;
+}
+
+.benefits__item-content {
+    margin-left: 2em;
+}
+
+.benefits__item-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 14px;
+    }
+    .container {
+        max-width: 800px;
+    }
+    .benefits__item {
+        flex-basis: 300px;
+    }
+}
