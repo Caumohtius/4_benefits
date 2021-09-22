@@ -7,7 +7,7 @@
         url("./font/flaticon.svg?243399f29508ceab42516e216fe25ad3#flaticon") format("svg");
 }
 html {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* Обнуление и начальные стили*/
@@ -65,7 +65,7 @@ div[class^="icon_"]:before, div[class*="icon_"]:before {
 /* Основные стили */
 .container {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 800px;
 }
 
 .benefits {
@@ -93,12 +93,12 @@ div[class^="icon_"]:before, div[class*="icon_"]:before {
 
 .benefits__item {
     display: flex;
-
-    padding: 1.5em 1em;
+    margin-bottom: 2em;
+    padding: 0 14px;
 
     justify-content: flex-start;
-    align-items: center;
-    flex-basis: 400px;
+    align-items: flex-start;
+    flex-basis: 300px;
 }
 
 .benefits__item-icon {
@@ -112,17 +112,21 @@ div[class^="icon_"]:before, div[class*="icon_"]:before {
 
 .benefits__item-title {
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
-@media screen and (max-width: 1200px) {
+.benefits__item-text {
+    margin: 1em 0;
+}
+
+@media screen and (min-width: 1200px) {
     html {
-        font-size: 14px;
+        font-size: 16px;
     }
     .container {
-        max-width: 800px;
+        max-width: 1200px;
     }
     .benefits__item {
-        flex-basis: 300px;
+        flex-basis: 400px;
     }
 }
