@@ -116,7 +116,7 @@ div[class^="icon_"]:before, div[class*="icon_"]:before {
 }
 
 .benefits__item-text {
-    margin: 1em 0;
+    margin-top: 1em;
 }
 
 @media screen and (min-width: 1200px) {
